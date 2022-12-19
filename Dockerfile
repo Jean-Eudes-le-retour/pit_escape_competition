@@ -2,9 +2,7 @@ FROM cyberbotics/webots.cloud:R2023a-ubuntu20.04
 
 # Copy all the competition files into a project folder
 # in webots.yml this folder is referenced in the "dockerCompose" field to be used by the theia IDE when testing the competition online
-ARG PROJECT_PATH=/usr/local/webots-project
-ENV PROJECT_PATH=${PROJECT_PATH}
-WORKDIR ${PROJECT_PATH}
+WORKDIR /usr/local/webots-project
 RUN mkdir -p .
 COPY . .
 
