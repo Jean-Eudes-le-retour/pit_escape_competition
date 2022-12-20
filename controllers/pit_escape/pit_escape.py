@@ -13,7 +13,7 @@ pitchMotor.setVelocity(0.0)
 bodyGyro = robot.getDevice("body gyro")
 bodyGyro.enable(timestep)
 
-maxSpeed = 8.72
+maxSpeed = 8.6
 
 pitchMotor.setVelocity(maxSpeed)
 
