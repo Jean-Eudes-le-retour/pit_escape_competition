@@ -1,6 +1,15 @@
 """Sample Webots controller for the pit escape benchmark."""
 
 
+from controller import Robot
+
+robot = Robot()
+
+timestep = int(robot.getBasicTimeStep())
+
+# Max possible speed for the motor of the robot.
+maxSpeed = 8.72
+
 # Configuration of the main motor of the robot.
 pitchMotor = robot.getDevice("body pitch motor")
 pitchMotor.setPosition(float('inf'))
